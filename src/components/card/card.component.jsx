@@ -1,7 +1,17 @@
 import { Component } from "react";
 import "./card.styles.css";
 
-class Card extends Component {
+interface Monster {
+  id: string;
+  name: string;
+  email: string;
+}
+
+interface CardProps {
+  monster: Monster;
+}
+
+class Card extends Component<CardProps> {
   render() {
     const { id, name, email } = this.props.monster;
 
