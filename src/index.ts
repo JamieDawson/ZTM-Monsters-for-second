@@ -10,8 +10,8 @@ import reportWebVitals from "./reportWebVitals";
 //   // </React.StrictMode>
 // );
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const container: HTMLElement | null = document.getElementById("root");
+const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <App />
